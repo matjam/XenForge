@@ -38,7 +38,6 @@ Installation:
         S:password=password
         S:port=3306
         S:type=mysql
-    }
 
  5. You can customise the SQL to make it work with other databases.
 
@@ -48,15 +47,15 @@ Installation:
     if you want to know what groups you have and what their IDs are, use your sql
     client and look at xf_user_group:
 
-mysql> select * from xf_user_group;
-+---------------+----------------------------+------------------------+--------------+----------------------+
-| user_group_id | title                      | display_style_priority | username_css | user_title           |
-+---------------+----------------------------+------------------------+--------------+----------------------+
-|             1 | Unregistered / Unconfirmed |                      0 |              | Guest                |
-|             2 | Player                     |                      0 |              | Player               |
-|             3 | Admin                      |                   1000 |              | Administrator        |
-|             4 | Mod                        |                    900 |              | Moderator            |
-+---------------+----------------------------+------------------------+--------------+----------------------+
+        mysql> select * from xf_user_group;
+        +---------------+----------------------------+------------------------+--------------+----------------------+
+        | user_group_id | title                      | display_style_priority | username_css | user_title           |
+        +---------------+----------------------------+------------------------+--------------+----------------------+
+        |             1 | Unregistered / Unconfirmed |                      0 |              | Guest                |
+        |             2 | Player                     |                      0 |              | Player               |
+        |             3 | Admin                      |                   1000 |              | Administrator        |
+        |             4 | Mod                        |                    900 |              | Moderator            |
+        +---------------+----------------------------+------------------------+--------------+----------------------+
 
  6. You can customise the messages that users received if they are rejected.
 
